@@ -71,6 +71,21 @@
     <div class="container-fluid">
       <div class="main-content-wrapper">
         <div class="container-fluid">
+          <div class="top-bar text-center position-relative">
+            <div class="top-bar-inner">
+              {{ $pdfLink := "BohdanTkachenkoResume.pdf" | absURL }}
+              <a
+                class="btn btn-primary top-bar-cta"
+                href="{{ $pdfLink }}"
+                target="_blank"
+              >
+                Download Resume (PDF)
+              </a>
+            </div>
+            <!--//top-bar-inner-->
+          </div>
+          <!--//top-bar-->
+
           <div class="resume-wrapper mx-auto rounded-2">
             {{ partial "resume-header.html" $cv }}
 
