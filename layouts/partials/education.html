@@ -1,0 +1,40 @@
+<section class="resume-educate-section resume-section">
+  <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+    <i class="resume-section-heading-icon bi bi-book me-2"></i>
+    Education
+  </h3>
+  <ul class="list-unstyled">
+    {{ range .education }}
+    <li class="mb-2">
+      <div class="resume-degree font-weight-bold">
+        {{ .studyType }} in {{ .area }}
+      </div>
+      <div class="resume-degree-org">
+        <a
+          href="{{ .url }}"
+          target="_blank"
+          rel="noreferrer me"
+        >
+          {{ .institution }}
+        </a>
+      </div>
+      <div class="resume-degree-time">
+        <span>{{ (time .startDate).Format "January 2006" }}</span>
+        <span>-</span>
+        {{ if .endDate }}
+        <span>{{ (time .endDate).Format "January 2006" }}</span>
+        {{ else }}
+        <span>Present</span>
+        {{ end }}
+      </div>
+
+      <ul class="resume-timeline-list">
+        {{ range .courses }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+<!--//resume-section-->

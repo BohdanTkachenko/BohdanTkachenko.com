@@ -1,0 +1,48 @@
+<div class="resume-header px-4 px-lg-5">
+  <div class="resume-profile-holder text-center">
+    <img
+      class="resume-profile-pic rounded-circle"
+      src="{{ .basics.image }}"
+      alt="image"
+    />
+
+    <h2 class="resume-name text-uppercase">{{ .basics.name }}</h2>
+    <div class="resume-role-title text-uppercase">{{ .basics.label }}</div>
+
+    <div class="resume-contact mt-4">
+      <ul
+        class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between"
+      >
+        <li class="list-inline-item me-md-3 me-lg-5">
+          {{ $phoneClean := replaceRE "[^0-9]" "" .basics.phone }}
+          <a href="call:+1{{ $phoneClean }}">
+            <i class="resume-contact-icon bi bi-telephone-inbound me-2"></i>
+            {{ .basics.phone }}
+          </a>
+        </li>
+        <li class="list-inline-item me-md-3 me-lg-5">
+          <a href="mailto:{{ .basics.email }}">
+            <i class="resume-contact-icon bi bi-envelope me-2"></i>
+            {{ .basics.email }}
+          </a>
+        </li>
+
+        {{ range .basics.profiles }}
+        <li class="list-inline-item me-md-3 me-lg-5">
+          <a
+            href="{{ .url }}"
+            target="_blank"
+            rel="noreferrer me"
+          >
+            <i class="fa-brands fa-{{ .network }} fa-fw"></i>
+            {{ .username }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <!--//resume-contact-->
+  </div>
+  <!--//profile-holder-->
+</div>
+<!--//resume-header-->

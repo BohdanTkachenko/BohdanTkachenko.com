@@ -1,0 +1,28 @@
+<section class="resume-lang-section resume-section">
+  <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+    <i class="resume-section-heading-icon bi bi-translate me-2"></i>
+    Languages
+  </h3>
+  <ul class="list-unstyled resume-lang-list">
+    {{ range .languages }}
+    <li class="mb-2">
+      {{ $fluencyInt := int .fluency }}
+      <div class="resume-lang-name">{{ .language }}</div>
+      <div class="resume-level-indicator row gx-0 flex-nowrap">
+        {{ range $i := seq 10 }}
+        <div class="col">
+          {{ if le $i $fluencyInt }}
+          <span class="item item-full"></span>
+          {{ else if eq $i $fluencyInt }}
+          <span class="item item-half"></span>
+          {{ else }}
+          <span class="item"></span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      <!--//resume-level-indicator-->
+    </li>
+    {{ end }}
+  </ul>
+</section>

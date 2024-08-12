@@ -1,0 +1,17 @@
+<section class="resume-skills-section resume-section">
+  <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+    <i class="resume-section-heading-icon bi bi-person-gear me-2"></i>
+    Technologies
+  </h3>
+  {{ range .skills }}
+  <div class="resume-skill-name">{{ .name }}</div>
+  <ul class="list-inline">
+    {{ range .keywords }}
+    <li class="list-inline-item">
+      <span class="badge resume-skill-badge">{{ . }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</section>
+<!--//resume-section-->

@@ -1,0 +1,54 @@
+<section class="resume-experience-section resume-section">
+  <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+    <i class="resume-section-heading-icon bi bi-briefcase me-2"></i>
+    Work Experience
+  </h3>
+  <div class="resume-timeline position-relative">
+    {{ range .work }}
+    <article class="resume-timeline-item position-relative pb-5">
+      <div class="resume-timeline-item-header mb-2">
+        <div class="resume-position-meta d-flex justify-content-between mb-1">
+          <div class="resume-position-time">
+            <span>{{ (time .startDate).Format "January 2006" }}</span>
+            <span>-</span>
+            {{ if .endDate }}
+            <span>{{ (time .endDate).Format "January 2006" }}</span>
+            {{ else }}
+            <span>Present</span>
+            {{ end }}
+          </div>
+          <div class="resume-company-name">
+            {{ if .url }}
+            <a
+              href="{{ .url }}"
+              target="_blank"
+              rel="noreferrer me"
+            >
+              {{ .name }}
+            </a>
+            {{ else }} {{ .name }} {{ end }}
+          </div>
+        </div>
+        <h3 class="resume-position-title mb-1">{{ .position }}</h3>
+      </div>
+      <!--//resume-timeline-item-header-->
+
+      <div class="resume-timeline-item-desc">
+        {{ if .summary }}
+        <div class="resume-timeline-item-desc-summary">{{ .summary }}</div>
+        {{ end }}
+
+        <ul class="resume-timeline-list">
+          {{ range .highlights }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      <!--//resume-timeline-item-desc-->
+    </article>
+    <!--//resume-timeline-item-->
+    {{ end }}
+  </div>
+  <!--//resume-timeline-->
+</section>
+<!--//resume-experience-section-->

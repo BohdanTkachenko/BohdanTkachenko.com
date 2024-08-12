@@ -1,0 +1,307 @@
+"$schema" = "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json"
+
+projects = []
+references = []
+volunteer = []
+awards = []
+
+[meta]
+canonical = "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json"
+version = "v1.0.0"
+lastModified = "2024-08-12T19:00:00"
+
+[basics]
+name = "Bohdan \"Dan\" Tkachenko"
+label = "Senior Software Engineer"
+image = "https://media.licdn.com/dms/image/v2/C5603AQE1pJxbAhmoGA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1551159012615?e=1729123200&v=beta&t=DksXbUXW-r7F2bmhjAMHucCjlrJY_QQeyNWB3hwVo_w"
+email = "cv@BohdanTkachenko.com"
+phone = "(929) 999-4998"
+url = "http://BohdanTkachenko.com"
+summary = "Lifelong passion for Software Engineering, ignited at the age of 8 with independent projects and personal development, leading to a successful career spanning 24 years. Versatile Software Engineer with expertise across the full stack, including front-end, back-end, infrastructure, mobile, DevOps, and blockchain technologies. Co-founded two companies and led three engineering teams."
+
+[basics.location]
+city = "New York City, NY"
+
+[[basics.profiles]]
+network = "github"
+username = "BohdanTkachenko"
+url = "https://github.com/BohdanTkachenko"
+
+[[basics.profiles]]
+network = "linkedin"
+username = "BohdanTkachenko"
+url = "https://linkedin.com/in/BohdanTkachenko"
+
+[[work]]
+name = "Google"
+location = "Mountain View, CA; New York City, NY"
+description = ""
+position = "Senior Software Engineer"
+url = "https://google.com"
+startDate = "2019-06-01"
+summary = "Worked in Eval Infrastructure, a framework to assess the impact of changes across various Google systems. The framework compares system versions and generated metrics to evaluate changes, incorporating human feedback to ensure high quality. It is also utilized for training ML models"
+highlights = [
+    "Led infrastructure migration, resulting in a 50% reduction in resource consumption and increased system stability",
+    "Created a validation framework that reduced user errors and improved tool reliability",
+    "Developed a system to significantly enhance the accuracy of evaluation results comparison",
+    "Refactored a major codebase, reducing technical debt and increasing maintainability",
+    "Proactively identified and resolved production issues, enhancing system reliability",
+    "Conducted user research and analysis to drive product improvements",
+    "Actively participated in the interview process, contributing to company growth",
+]
+
+[[work]]
+name = "Zeus Protocol"
+location = "San Francisco, CA"
+description = ""
+position = "CTO & Co-founder"
+url = "https://linkedin.com/company/zeus-protocol-inc"
+startDate = "2018-04-01"
+endDate = "2019-05-30"
+summary = ""
+highlights = [
+    "Led a remote engineering team to design and launch a decentralized blockchain platform with real-time analytics",
+    "Launched a public beta product for Ethereum wallet analysis",
+    "Developed a high-performance GraphQL API for Ethereum, integrating public and proprietary data",
+    "Engineered a scalable data pipeline to efficiently process massive volumes of Ethereum data",
+]
+
+[[work]]
+name = "doc.ai (acquired by Sharecare)"
+location = "Palo Alto, CA"
+description = ""
+position = "Senior Software Engineer"
+url = "https://sharecare.com"
+startDate = "2016-09-01"
+endDate = "2018-04-01"
+summary = ""
+highlights = [
+    "As the founding engineer, architected and developed scalable cloud infrastructure on AWS and Google Cloud, implementing automated CI/CD pipelines to accelerate product delivery",
+    "Built HIPAA-compliant innovative pipeline for importing diverse health data sources, enabling seamless user integration and global third-party extensibility",
+    "Led a remote engineering team to successfully launch a React Native mobile application",
+]
+
+[[work]]
+name = "Shopgate"
+location = "Frankfurt, Germany"
+description = ""
+position = "Software Engineer"
+url = "https://shopgate.com"
+startDate = "2016-04-01"
+endDate = "2016-08-30"
+summary = ""
+highlights = [
+    "Developed a self-healing, crash-resilient microservice application with auto-scaling capabilities to ensure high availability and fault tolerance",
+    "Created a desktop IDE that empowered third-party developers to quickly adopt and utilize the framework within minutes",
+]
+
+[[work]]
+name = "Edgio (formerly Limelight Networks)"
+location = "Lviv, Ukraine"
+description = ""
+position = "Software Engineer"
+url = "https://edg.io"
+startDate = "2014-11-01"
+endDate = "2016-02-28"
+summary = ""
+highlights = [
+    "Developed a modern web application that allows to streamline management of company services",
+    "Optimized the project's automated build system, reducing production build times by 30%",
+    "Reduced application source code size by 50% through refactoring, improving maintainability and performance",
+]
+
+[[work]]
+name = "WookieeLabs"
+location = "Kharkiv, Ukraine"
+description = ""
+position = "Co-founder & Software Engineer"
+url = "https://www.upwork.com/agencies/425296346833293312"
+startDate = "2013-01-15"
+endDate = "2014-08-30"
+summary = ""
+highlights = [
+    "Co-founded and co-managed an outsourcing company, growing it to 15 employees",
+    "Led a team of 5 software engineers to successfull delivery of a medical social network for Nokia (later acquired by Microsoft)",
+    "Contributed to the open-source community by implementing several JavaScript and Node.js libraries",
+]
+
+[[work]]
+name = "QArea"
+location = "Kharkiv, Ukraine"
+description = ""
+position = "Software Engineer"
+url = "https://qarea.com"
+startDate = "2013-01-10"
+endDate = "2011-06-01"
+summary = ""
+highlights = [
+    "Played a key role in the development of an ERP system for a global bank, navigating complex requirements and ensuring a top-quality product",
+]
+
+[[work]]
+name = "Freelance (Part-time)"
+location = "Kharkiv, Ukraine"
+description = ""
+position = "Software Engineer"
+startDate = "2006-05-01"
+endDate = "2011-06-30"
+summary = ""
+highlights = [
+    "Beginning in high school, gained hands-on experience through various freelance web development projects, showcasing proficiency in front-end and back-end technologies",
+    "Developed a range of web applications, including an issue tracking system, a queue-based mailing system, a Q&A platform with integrated payment processing, and an e-commerce site",
+]
+
+[[education]]
+institution = "Kharkiv National University of Radio Electronics"
+url = "https://nure.ua/en"
+area = "Computer Science"
+studyType = "MS"
+startDate = "2009-09-01"
+endDate = "2014-05-30"
+courses = [
+    "As an undergraduate, developed a conversational chatbot that demonstrated early proficiency in natural language processing",
+]
+
+[[publications]]
+name = "Common Methodology of Data Analysis of Natural Disasters"
+publisher = "Zenodo"
+releaseDate = "2016-05-20"
+url = "https://zenodo.org/records/51752"
+
+[[publications]]
+name = "Intellectual Search Engine of Adequate Information in Internet for Creating Databases and Knowledge Bases"
+publisher = "International Journal \"Information Technologies Knowledge\""
+releaseDate = "2015-06-01"
+url = "http://www.foibg.com/ijitk/ijitk-vol09/ijitk09-02-p04.pdf"
+
+[[publications]]
+name = "Environment monitoring for improving management level in crisis and post-crisis situations"
+publisher = "IDRC DAVOS 2014"
+releaseDate = "2014-08-24"
+url = "https://idrc.info/fileadmin/user_upload/idrc/documents/IDRC-Programme-Shortabstract.pdf"
+
+[[publications]]
+name = "Organizing of Knowledge Bases for Emergency Situations Using Social Networks"
+publisher = "International Journal \"Information Models and Analyses\""
+releaseDate = "2015-06-01"
+url = "http://www.foibg.com/ijima/vol03/ijima03-03-p11.pdf"
+
+[[skills]]
+name = "Web Development"
+level = "Master"
+keywords = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "AngularJS",
+    "Node.js",
+    "Express.js",
+    "GraphQL",
+    "AJAX",
+    "MEAN stack",
+    "MERN stack",
+    "Redux",
+    "Webpack",
+    "Styled-Components",
+    "Apollo Server",
+    "TypeORM",
+    "Sequelize",
+    "Passport.js",
+]
+
+[[skills]]
+name = "Mobile Development"
+level = "Master"
+keywords = ["React Native", "Expo"]
+
+[[skills]]
+name = "Languages"
+level = "Master"
+keywords = [
+    "C/C++",
+    "JavaScript",
+    "Java",
+    "Go",
+    "Python",
+    "Solidity",
+    "PHP",
+    "SQL",
+    "Bas",
+]
+
+[[skills]]
+name = "Databases"
+level = "Master"
+keywords = ["MongoDB", "PostgreSQL", "MySQL", "Redis"]
+
+[[skills]]
+name = "Cloud Platforms & Infrastructure"
+level = "Master"
+keywords = [
+    "AWS (EC2, S3)",
+    "Google Cloud Platform / GCP (Compute Engine, Cloud Storage, Cloud SQL)",
+    "Kubernetes",
+    "Docker",
+    "Ansible",
+]
+
+[[skills]]
+name = "CI/CDs (Continuous Integration/Continuous Deployment)"
+level = "Master"
+keywords = ["CircleCI", "TravisCI", "Jenkins"]
+
+[[skills]]
+name = "Other Technologies & Tools"
+level = "Master"
+keywords = [
+    "Linux",
+    "MacOS",
+    "Blockchain",
+    "Ethereum",
+    "DevOps",
+    "Git",
+    "Microservices",
+    "RESTful APIs",
+    "Automated Testing",
+    "Data Pipelines",
+    "Natural Language Processing (NLP)",
+    "Web3.js",
+    "RabbitMQ",
+]
+
+[[languages]]
+language = "Ukrainian"
+fluency = "10"
+
+[[languages]]
+language = "Russian"
+fluency = "9"
+
+[[languages]]
+language = "English"
+fluency = "8"
+
+[[languages]]
+language = "German"
+fluency = "3"
+
+[[interests]]
+name = "Video games"
+keywords = []
+
+[[interests]]
+name = "Driving"
+keywords = []
+
+[[interests]]
+name = "Gadgets"
+keywords = []
+
+[[interests]]
+name = "Travel"
+keywords = []
+
+[[interests]]
+name = "Open-Source"
+keywords = []
